@@ -1,22 +1,36 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Matching</title>
 </head>
 <body>
+	<style>
+		textarea{
+			resize:none;
+			background-color:skyblue;color:white;
+			outline: none;
+  			border: none;
+		}
+		input{
+			background-color:skyblue;color:white;
+			outline: none;
+  			border: none;
+		}
+	</style>
+	
 	<form action="/result" method="get">
-		¿é¤J¦r¦ê01<textarea style="background-color:skyblue;color:white;;" name="inputstring1" rows="6" required ></textarea>
+		è¼¸å…¥å­—ä¸²1<textarea name="inputstring1" rows="6" ></textarea>
 		<p>
-		¿é¤J¦r¦ê2<textarea style="background-color:skyblue;color:white;" name="inputstring2" rows="6" required></textarea>
+		è¼¸å…¥å­—ä¸²2<textarea name="inputstring2" rows="6" ></textarea>
 		<p>
-		<input style="background-color:skyblue;color:white;" type="submit" value="°t¹ï" />
+		<input type="submit" value="é…å°" />
 	</form>
 	
-	<h2>¿é¥Xµ²ªG</h2>
-	<textarea rows="8" disabled>${name1 } ${name1 } ${name1 }</script>
+	<h2>è¼¸å‡ºçµæœ</h2>
+	<textarea rows="8" disabled>${name1 }-${pass1 }
 	</textarea>
 </body>
 </html>

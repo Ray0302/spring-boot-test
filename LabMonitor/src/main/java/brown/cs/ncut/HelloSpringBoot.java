@@ -19,10 +19,9 @@ public class HelloSpringBoot {
 		
 		int length1 = line1.length;
 		int length2 = line2.length;
-		int[] num1 = new int[length1];
+		int[] num1 = new int[length1];//lines.length 計算line1 2 的長度
 		int[] num2 = new int[length2];
 		
-		//lines.length 計算line1 2 的長度
 		for(i=0; i<length1; i++)
 		{
 			num1[i] = r.nextInt(length1);
@@ -42,8 +41,8 @@ public class HelloSpringBoot {
 		model.addAttribute("pass1",pass);
 		
 		System.out.println(user);
-		
 		System.out.println(pass);
+		
 		return "index";
 	}
 }
